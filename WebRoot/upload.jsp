@@ -20,7 +20,7 @@
 	<font color="black">${message }</font>
 	<form action="/day11_upload/upload2" method="post" enctype="multipart/form-data">
 		uploader: <input type="text" name="name"><br/>
-		select a file to upload:<input type="file" name="file"><br/>
+		select a file to upload:<input type="file" name="BTC"><br/>
 		<input type="submit" value="upload">
 	</form>
 </body>
