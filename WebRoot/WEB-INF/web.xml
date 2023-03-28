@@ -5,7 +5,6 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee"; 
 	http="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
   <display-name></display-name>
-
   <servlet>
     <servlet-name>UploadServlet2</servlet-name>
     <servlet-class>com.minhui.servlet.UploadServlet2</servlet-class>
