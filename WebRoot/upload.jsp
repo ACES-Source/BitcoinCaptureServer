@@ -7,18 +7,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h3>文件上传的表单</h3>
+	<h3>file upload form</h3>
 	<!-- 
-		注意:这里的文件上传的表单　必须要满足　以下的三个条件，缺一不可
-		1. 表单的 提交方式, 必须是 post , 
-		2. 表单的 enctype属性的值必须是 multipart/form-data (用来指定 表单的数据提交到服务器时 是怎样被描述的 , 是怎样带给服务器的 )
-		3. 表单必须要有一个 input 标签,type属性的值是  type="file"
+		Note: The file upload form here must meet the following three conditions, all of which 
+                are indispensable
+                1. The submission method of the form must be post ,
+                2. The value of the enctype attribute of the form must be multipart/form-data 
+                (used to specify how the form data is described when it is submitted to the server, 
+                and how it is brought to the server)
+                3. The form must have an input tag, and the value of the type attribute is type="file"
 	 -->
-	<font color="red">${message }</font>
+	<font color="black">${message }</font>
 	<form action="/day11_upload/upload2" method="post" enctype="multipart/form-data">
-		上传人: <input type="text" name="name"><br/>
-		请选择要上传的文件:<input type="file" name="file"><br/>
-		<input type="submit" value="上传">
+		uploader: <input type="text" name="name"><br/>
+		select a file to upload:<input type="file" name="file"><br/>
+		<input type="submit" value="upload">
 	</form>
 </body>
 </html>
